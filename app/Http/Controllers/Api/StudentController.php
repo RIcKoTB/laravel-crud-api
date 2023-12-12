@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     public function index(){
-        return 'i am here';
+        $students = Student::all();
+        return response()->json($data, 200);
     }
 }
